@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+import CssBaseline from '@mui/material/CssBaseline';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <CssBaseline>
+      <Component {...pageProps} />
+    </CssBaseline>
+  );
 }
 
-export default MyApp
+export default MyApp;
