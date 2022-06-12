@@ -1,11 +1,14 @@
 import '../styles/globals.css';
 import CssBaseline from '@mui/material/CssBaseline';
+import { CookiesProvider } from 'react-cookie';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <CssBaseline>
-      <Component {...pageProps} />
-    </CssBaseline>
+    <CookiesProvider>
+      <CssBaseline>
+        <Component {...pageProps} />
+      </CssBaseline>
+    </CookiesProvider>
   );
 }
 
